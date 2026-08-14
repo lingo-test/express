@@ -10,6 +10,7 @@ app.get('/', function(req, res){
 
 /* istanbul ignore next */
 if (!module.parent) {
-  app.listen(3000);
-  console.log('Express started on port 3000');
+  var port = process.env.PORT || 8000;
+  app.listen(port, '0.0.0.0');
+  console.log('Express started on port ' + port);
 }

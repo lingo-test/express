@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "projectType": "other",
+  "services": [
+    {
+      "name": "web",
+      "role": "backend",
+      "cwd": ".",
+      "port": 8000,
+      "startCommand": "node examples/hello-world/index.js",
+      "preview": true
+    }
+  ],
+  "checkCommand": "npm test"
+}
